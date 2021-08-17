@@ -1,0 +1,153 @@
+$playground: #282a36;
+$border: #797a7e;
+
+$primary-text: #e0e6f0;
+$secondary-text: #9ea8b9;
+
+.popup {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+  background-color: rgba(black, 0.8);
+  z-index: 100;
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $playground;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $playground;
+  }
+
+  &__welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  &__alert {
+    display: flex;
+    flex-direction: column;
+    width: 40% !important;
+    align-items: center;
+
+    @media screen and (max-width: 1100px) {
+      width: 60% !important;
+    }
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    .description {
+      margin-bottom: 40px !important;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    text-align: center;
+    background-color: $playground;
+    border: 1px solid $border;
+    border-radius: 4px;
+    color: $secondary-text;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 70vh;
+    box-shadow: 0 20px 40px rgba(black, 0.2);
+    padding: 40px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    @media screen and (max-height: 700px) {
+      height: 85vh !important;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 70% !important;
+    }
+
+    @media screen and (max-width: 750px) {
+      width: 85% !important;
+    }
+
+    .title {
+      color: $primary-text;
+      font-size: 40px;
+    }
+
+    .description {
+      color: $secondary-text;
+      font-weight: 400;
+      font-size: 23px;
+    }
+
+    .source-code {
+      font-weight: 400;
+      font-size: 20px;
+
+      a,
+      a:visited,
+      a:link {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .typos {
+      font-weight: 400;
+      font-size: 20px;
+      text-align: start;
+
+      p {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 3%;
+      right: 3%;
+      font-size: 20px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $primary-text;
+      }
+    }
+  }
+}
