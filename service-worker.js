@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/JELoop-Visualizer/precache-manifest.cc3c96cff4a6b61cf2d829be72a4e1db.js"
+  "/JELoop-Visualizer/precache-manifest.2e12e3167aaddcfce53dd44b1db27add.js"
 );
 
 self.addEventListener('message', (event) => {

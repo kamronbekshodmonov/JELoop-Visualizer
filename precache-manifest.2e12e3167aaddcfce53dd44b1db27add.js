@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ab72db4fe521f8d5ef7a2dcdc95f25b",
+    "revision": "377ea2a7b4661b1dfe98b0c5880911a6",
     "url": "/JELoop-Visualizer/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JELoop-Visualizer/static/css/2.3dcb76aa.chunk.css"
   },
   {
-    "revision": "59124ad70cd30629a291",
+    "revision": "086db1b01549b7f6db57",
     "url": "/JELoop-Visualizer/static/css/main.81361ad9.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JELoop-Visualizer/static/js/2.c18adeac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "59124ad70cd30629a291",
-    "url": "/JELoop-Visualizer/static/js/main.ae4b7ba6.chunk.js"
+    "revision": "086db1b01549b7f6db57",
+    "url": "/JELoop-Visualizer/static/js/main.492d7b58.chunk.js"
   },
   {
     "revision": "a01d7afccbf44ce0ddd0",
